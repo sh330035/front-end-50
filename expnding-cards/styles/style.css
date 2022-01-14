@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px;
+}
+
+.container .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+  width: 6%;
+  cursor: pointer;
+}
+
+.container .photo__active {
+  width: 68%;
+}
+
+.container .photo__img {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container .photo__img__active {
+  width: 100%;
+}
+
+.container .photo__title {
+  display: none;
+  font-family: Open Sans;
+  color: #ffffff;
+  margin: auto 0px 25px 25px;
+  z-index: 10;
+}
+
+.container .photo__title__active {
+  display: unset;
+}
+/*# sourceMappingURL=style.css.map */
