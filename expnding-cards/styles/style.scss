@@ -27,6 +27,7 @@ h3 {
     position: relative;
     border-radius: 50px;
     width: 6%;
+    transition: all 1s ease-out;
     cursor: pointer;
     &.active {
       width: 68%;

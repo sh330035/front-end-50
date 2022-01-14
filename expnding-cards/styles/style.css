@@ -28,6 +28,8 @@ h3 {
   position: relative;
   border-radius: 50px;
   width: 6%;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
   cursor: pointer;
 }
 
