@@ -28,10 +28,16 @@ h3 {
     border-radius: 50px;
     width: 6%;
     cursor: pointer;
-    &__active {
+    &.active {
       width: 68%;
+      .img {
+        width: 100%;
+      }
+      .title {
+        display: unset;
+      }
     }
-    &__img {
+    .img {
       position: absolute;
       height: 100%;
       max-width: 100%;
@@ -39,20 +45,13 @@ h3 {
       object-fit: cover;
       z-index: 1;
       overflow: hidden;
-
-      &__active {
-        width: 100%;
-      }
     }
-    &__title {
+    .title {
       display: none;
       font-family: Open Sans;
       color: $font-color;
       margin: auto 0px 25px 25px;
       z-index: 10;
-      &__active {
-        display: unset;
-      }
     }
   }
 }

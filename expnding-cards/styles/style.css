@@ -31,11 +31,19 @@ h3 {
   cursor: pointer;
 }
 
-.container .photo__active {
+.container .photo.active {
   width: 68%;
 }
 
-.container .photo__img {
+.container .photo.active .img {
+  width: 100%;
+}
+
+.container .photo.active .title {
+  display: unset;
+}
+
+.container .photo .img {
   position: absolute;
   height: 100%;
   max-width: 100%;
@@ -46,19 +54,11 @@ h3 {
   overflow: hidden;
 }
 
-.container .photo__img__active {
-  width: 100%;
-}
-
-.container .photo__title {
+.container .photo .title {
   display: none;
   font-family: Open Sans;
   color: #ffffff;
   margin: auto 0px 25px 25px;
   z-index: 10;
-}
-
-.container .photo__title__active {
-  display: unset;
 }
 /*# sourceMappingURL=style.css.map */
