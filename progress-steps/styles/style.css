@@ -3,5 +3,103 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #ecf1eb;
+}
+
+button {
+  background-color: none;
+  border: none;
+}
+
+.controller .btn {
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin: 35px 5px;
+  background-color: #6cb0f5;
+  color: white;
+  cursor: pointer;
+}
+
+.controller .btn.disabled {
+  background-color: #c9c9c9;
+  cursor: not-allowed;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .bar__step {
+  height: 30px;
+  width: 30px;
+  margin-right: 80px;
+  background-color: white;
+  color: #969696;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #c9c9c9;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all ease-in 0.5s 0.4s;
+  transition: all ease-in 0.5s 0.4s;
+}
+
+.container .bar__step.active {
+  border-color: #6cb0f5;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.container .bar :nth-last-child(1)::before,
+.container .bar :nth-last-child(2)::before,
+.container .bar :nth-last-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #c9c9c9;
+  top: 50%;
+  right: 27px;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+
+.container .bar :nth-last-child(1).active::before,
+.container .bar :nth-last-child(2).active::before,
+.container .bar :nth-last-child(3).active::before {
+  background-color: #6cb0f5;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+
+.container .bar :nth-last-child(1) {
+  margin-right: 0px;
 }
 /*# sourceMappingURL=style.css.map */
