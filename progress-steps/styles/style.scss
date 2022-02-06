@@ -1,26 +1,27 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     background-color: #ecf1eb;
 }
 
-button{
+button {
     background-color: none;
     border: none;
 }
 
 
 
-.controller{
-    .btn{
+.controller {
+    .btn {
         padding: 10px 30px;
         border-radius: 8px;
         margin: 35px 5px;
         background-color: #6cb0f5;
         color: white;
         cursor: pointer;
-        &.disabled{
+
+        &.disabled {
             background-color: rgb(201, 201, 201);
             cursor: not-allowed;
         }
@@ -28,22 +29,24 @@ button{
 }
 
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    .bar{
+    transform: translate(-50%, -50%);
+
+    .bar {
         display: flex;
-        &__step{
+
+        &__step {
             height: 30px;
             width: 30px;
             margin-right: 80px;
             background-color: white;
-            color:rgb(150, 150, 150);
+            color: rgb(150, 150, 150);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,15 +54,17 @@ button{
             border-radius: 50%;
             position: relative;
             transition: all ease-in 0.5s 0.4s;
-            &.active{
+
+            &.active {
                 border-color: #6cb0f5;
                 transition: all ease-in 0.5s;
             }
         }
+
         :nth-last-child(1),
         :nth-last-child(2),
-        :nth-last-child(3){
-            &::before{
+        :nth-last-child(3) {
+            &::before {
                 content: "";
                 position: absolute;
                 width: 80px;
@@ -70,14 +75,15 @@ button{
                 transition: all ease-in 0.4s;
             }
 
-            &.active{
-                &::before{
+            &.active {
+                &::before {
                     background-color: #6cb0f5;
                     transition: all ease-in 0.4s;
                 }
             }
         }
-        :nth-last-child(1){
+
+        :nth-last-child(1) {
             margin-right: 0px;
         }
     }
