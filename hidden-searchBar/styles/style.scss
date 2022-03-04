@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: aquamarine;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+
+    }
+}
