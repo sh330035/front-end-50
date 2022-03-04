@@ -42,7 +42,9 @@ h3 {
 }
 
 .container .photo.active .title {
-  display: unset;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 1;
 }
 
 .container .photo .img {
@@ -57,7 +59,7 @@ h3 {
 }
 
 .container .photo .title {
-  display: none;
+  opacity: 0;
   font-family: Open Sans;
   color: #ffffff;
   margin: auto 0px 25px 25px;
