@@ -4,4 +4,36 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loading-text {
+  font-size: 50px;
+  color: antiquewhite;
+  position: absolute;
+}
+
+.pic-cover {
+  position: absolute;
+  background-image: url("../images/nature.jpg");
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
 /*# sourceMappingURL=style.css.map */
