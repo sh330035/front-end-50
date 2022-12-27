@@ -4,18 +4,43 @@
     box-sizing: border-box;
 }
 
-main{
+body {
     background-color: aquamarine;
-    height: 100vh;
-    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-    .container{
-        border: 1px solid red;
-        display: flex;
-        align-items: center;
+.container{
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    transition: width 0.3s ease;
+    .search-bar{
+        position: relative;
+        border: none;
+        width: 0%;
+        margin-right: 5px;
+        
 
+        &.active{
+            width: 100%;
+            display: block;
+        }
+    }
+    .icon{
+        display: inline;
+        transition: transform 0.3s ease;
+        img{
+            height: 20px;
+            cursor: pointer;
+        }
     }
 }
+
