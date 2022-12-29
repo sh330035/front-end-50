@@ -65,5 +65,9 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 5px 5px 10px gray;
           box-shadow: 5px 5px 10px gray;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
