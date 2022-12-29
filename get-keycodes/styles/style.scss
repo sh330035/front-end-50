@@ -12,3 +12,41 @@ body{
     justify-content: center;
     height: 100vh;
 }
+
+
+.init-text{
+    background-color: aliceblue;
+    border: 0.5px black solid;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    &.hidden{
+        display: none;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    &.hidden{
+        display: none;
+    }
+
+    .inner-text{
+        font-size: 18px;
+    }
+    .inner-box{
+        margin-top: 20px;
+        background-color: aliceblue;
+        min-height: 50px;
+        width: 100%;
+        border: 0.5px black solid;
+        border-radius: 12px;
+        box-shadow: 5px 5px 10px gray;
+    }
+}
+
