@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -12,41 +11,28 @@ h3 {
 .container {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 100px;
 }
-
 .container .photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   border-radius: 50px;
   width: 6%;
-  -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   cursor: pointer;
 }
-
 .container .photo.active {
   width: 68%;
 }
-
 .container .photo.active .img {
   width: 100%;
 }
-
 .container .photo.active .title {
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 1;
 }
-
 .container .photo .img {
   position: absolute;
   height: 100%;
@@ -57,12 +43,10 @@ h3 {
   z-index: 1;
   overflow: hidden;
 }
-
 .container .photo .title {
   opacity: 0;
   font-family: Open Sans;
   color: #ffffff;
   margin: auto 0px 25px 25px;
   z-index: 10;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
