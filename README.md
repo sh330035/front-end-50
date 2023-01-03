@@ -8,3 +8,4 @@
 |03|[Hidden-Search-Bar](https://github.com/sh330035/front-end-50/tree/main/hidden-searchBar)|[Demo](https://sh330035.github.io/front-end-50/hidden-searchBar/)
 |04|[Blurry-Loading](https://github.com/sh330035/front-end-50/tree/main/blurry-loading)|[Demo](https://sh330035.github.io/front-end-50/blurry-loading/)
 |05|[Get-Keycodes](https://github.com/sh330035/front-end-50/tree/main/get-keycodes)|[Demo](https://sh330035.github.io/front-end-50/get-keycodes/)
+|06|[Audio-page](https://github.com/sh330035/front-end-50/tree/main/audio-page)|[Demo](https://sh330035.github.io/front-end-50/audio-page/)
